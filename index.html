@@ -11,16 +11,7 @@
     
     <body>
         <ul id="app">
-            <li> {{ tempEmail0 }} </li>
-            <li> {{ tempEmail1 }} </li>
-            <li> {{ tempEmail2 }} </li>
-            <li> {{ tempEmail3 }} </li>
-            <li> {{ tempEmail4 }} </li>
-            <li> {{ tempEmail5 }} </li>
-            <li> {{ tempEmail6 }} </li>
-            <li> {{ tempEmail7 }} </li>
-            <li> {{ tempEmail8 }} </li>
-            <li> {{ tempEmail9 }} </li>
+            <li v-for="(email, i) in tempEmail"> {{ email }} </li>
         </ul>
         <script src="script.js"></script>
     </body>
