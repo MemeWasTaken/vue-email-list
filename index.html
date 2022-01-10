@@ -11,7 +11,7 @@
     
     <body>
         <ul id="app">
-            <li v-for="(email, i) in tempEmail"> {{ email }} </li>
+            <li v-if="tempEmail.length == 10" v-for="(email, i) in tempEmail"> {{ email }} </li>
         </ul>
         <script src="script.js"></script>
     </body>
